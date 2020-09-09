@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 align="center" style="font-weight:bolder;padding-bottom:10px;"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;&nbsp;Phone Book App</h1>
+    <div align="center" style="padding:5px;">
+    <form class="form-inline">
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="First Name" value={{Fn}} #Fname />
+        </div><br><br>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Last Name" value={{Ln}} #Lname />
+        </div><br><br>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Contact Number" value={{Con}} #ConNumber />
+        </div><br><br>
+        <button class="btn btn-success"(click)="editDetails(Fname.value,Lname.value,ConNumber.value)" type="button">Edit Contact</button>
+    </form><br>
+    <button class="btn btn-primary" (click)="mainPage()" type="button">View All Contacts</button> 
+    </div>
+</div>
